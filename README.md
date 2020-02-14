@@ -23,9 +23,26 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+
+- Class components will still exist in a lot of projects in the real world, so it is important to understand them because we will most likely be working with them in the future, even though hooks are now a thing. Before hooks, class components were the only way to give us the functionality of being able to access different stages of the react lifecycle.
+
 - [ ] Name three lifecycle methods and their purposes.
+
+- constructor() functions to create components with inciting state data for the intial render. so you would set up your initial state here. it also is where you would call super() to get access to the parent class's methods.
+
+-render() is used to tell react to return some piece of DOM. The React virtual DOM will then handle the steps to mount those DOM pieces.
+
+-componentDidMount() - is a part of the mounting phase in the react lifecycle, and it gets called as soon as the render method is called for the first time. this is where you will set your state (setState()), which then forces a re-render of our component. Any asynchronous actions should be performed inside of this component, especially when fetching data. 
+
 - [ ] What is the purpose of a custom hook?
+
+- using custom hooks makes things a lot easier when you need to reuse your code. It makes reading and writing code a lot cleaner and easier to do.
+
 - [ ] Why is it important to test our apps?
+
+-	Because the end user’s userflow could be different than what the developer had intended. Testing allows developers to be confident that their programs can work with all userflows in mind.
+
+
 
 ## Project Set Up
 
